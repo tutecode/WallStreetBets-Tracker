@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 ## 2. Create "main.py" file
 
-1- import libraries
-2- First 10 submissions to /r/wallstreetbets in 2021, filtering results to url/author/title/subreddit fields. (GET JSON)
+- import libraries
+- First 10 submissions to /r/wallstreetbets in 2021, filtering results to url/author/title/subreddit fields. (GET JSON)
 
 ![](wsb-json.png)
