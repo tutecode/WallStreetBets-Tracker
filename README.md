@@ -18,7 +18,13 @@ pip install -r requirements.txt
 
 ## 2. Create "main.py" file
 
-- import libraries
+- Import libraries
 - First 10 submissions to /r/wallstreetbets in 2021, filtering results to url/author/title/subreddit fields. (GET JSON)
 
 ![](wsb-json.png)
+
+- Save output in "wsb.txt". (https://www.howtogeek.com/299219/how-to-save-the-output-of-a-command-to-a-file-in-bash-aka-the-linux-and-macos-terminal/)
+
+```bash
+python3 main.py > wsb.txt
+```
