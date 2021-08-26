@@ -33,4 +33,4 @@ python3 main.py > wsb.txt
 
 - Create a DB "create_tables.sql"
 
-##ME QUEDE ACÁ TENGO QUE APRENDER BASES DE DATOS https://youtu.be/CJAdCLZaISw?t=1046
+### ME QUEDE ACÁ TENGO QUE APRENDER BASES DE DATOS https://youtu.be/CJAdCLZaISw?t=1046
