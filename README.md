@@ -28,3 +28,9 @@ pip install -r requirements.txt
 ```bash
 python3 main.py > wsb.txt
 ```
+
+- Filter title with Python – Filter list elements starting with given Prefix (https://bit.ly/38v59dj)
+
+- Create a DB "create_tables.sql"
+
+ME QUEDE ACÁ TENGO QUE APRENDER BASES DE DATOS https://youtu.be/CJAdCLZaISw?t=1046

@@ -19,4 +19,9 @@ for submission in submissions:
     print(submission.url)
 
     words = submission.title.split()
-    print(words)
+    cashtags = list(
+        set(filter(lambda word: word.lower().startswith('$'), words)))
+
+    if len(cashtags) > 0:
+        print(cashtags)
+        # print(submission.title)
