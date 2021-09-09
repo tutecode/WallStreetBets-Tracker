@@ -8,7 +8,7 @@ CREATE TABLE stock (
 
 CREATE TABLE mention (
     stock_id INTEGER,
-    dt TIMESTAMP WITHOUT TIME ZONE NOT NULL,
+    dt TIMESTAMP WITHOUT TIME ZONE NOT NULL, -- dt = datetime
     message TEXT NOT NULL,
     source TEXT NOT NULL, -- wsb - twitter - stocks
     url TEXT NOT NULL,

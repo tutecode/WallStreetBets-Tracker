@@ -33,4 +33,42 @@ python3 main.py > wsb.txt
 
 - Create a DB "create_tables.sql"
 
-### ME QUEDE ACÁ TENGO QUE APRENDER BASES DE DATOS https://youtu.be/CJAdCLZaISw?t=1046
+- Go to Terminal
+
+```bash
+sudo docker ps
+```
+
+```bash
+sudo docker exec -it timescaledb bash
+```
+
+```bash
+psql -U postgres
+```
+
+```bash
+CREATE TABLE mention (
+    stock_id INTEGER,
+    dt TIMESTAMP WITHOUT TIME ZONE NOT NULL, -- dt = datetime
+    message TEXT NOT NULL,
+    source TEXT NOT NULL, -- wsb - twitter - stocks
+    url TEXT NOT NULL,
+    PRIMARY KEY (stock_id, dt),
+    CONSTRAINT fk_mention_stock FOREIGN KEY (stock_id) REFERENCES stock (id)
+);
+
+CREATE INDEX ON mention (stock_id, dt DESC);
+SELECT create_hypertable('mention', 'dt');
+```
+
+- Go to TablesPLus and code into "SQL Query"
+
+```bash
+select count(*) as num_mentions, stock_id, symbol
+from mention join stock on stock.id = mention.stock_id
+group by stock_id, symbol
+order by num_mentions DESC;
+```
+
+![](wsb-db.png)
